@@ -1,0 +1,298 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  height: 800px;
+}
+
+/* a{
+  text-decoration: none;
+  color: black;
+} */
+
+.inner{
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.nav{
+  height: 15%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/*section*/
+.main {
+  position: relative;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .main {
+    background-color: #2e2e2e;
+  }
+}
+
+/* .main:hover {
+  transition: all 0.5s;
+  background-color: blanchedalmond;
+} */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.info > h1{
+  /* align-self: center; */
+  font-size: 8rem;
+  font-weight: 800;
+}
+
+.info > p {
+  margin-top : 30px;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .info {
+    color: #f2f2f2;
+  }
+
+}
+
+.ft {
+  height: 15%;
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* description page */
+.container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.page {
+  width: calc(90%/3);
+  margin: 20px 0;
+  /* border: 1px solid #2e2e2e; */
+  text-align: center;
+}
+
+.page > h2 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+.page > p {
+  height: 28rem;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+
+/* sprite-icon */
+
+.icon {
+  width: 100px;
+  height: 100px;
+  background-image: url('../AppleImg/sprite_download.png');
+  animation: sprite-icon 3s steps(1) infinite;
+}
+
+@keyframes sprite-icon {
+  /* 1~10 */
+  0.00% { background-position: 0 0; }
+  1.67% { background-position: -100px 0; }
+  3.33% { background-position: -200px 0; }
+  5.00% { background-position: -300px 0; }
+  6.67% { background-position: -400px 0; }
+  8.33% { background-position: -500px 0; }
+  10.00% { background-position: 0 -100px; }
+  11.67% { background-position: -100px -100px; }
+  13.33% { background-position: -200px -100px; }
+  15.00% { background-position: -300px -100px; }
+
+  /* 11~20 */
+  16.67% { background-position: -400px -100px; }
+  18.33% { background-position: -500px -100px; }
+  20.00% { background-position: 0 -200px; }
+  21.67% { background-position: -100px -200px; }
+  23.33% { background-position: -200px -200px; }
+  25.00% { background-position: -300px -200px; }
+  26.67% { background-position: -400px -200px; }
+  28.33% { background-position: -500px -200px; }
+  30.00% { background-position: 0 -300px; }
+  31.67% { background-position: -100px -300px; }
+
+  /* 21~30 */
+  33.33% { background-position: -200px -300px; }
+  35.00% { background-position: -300px -300px; }
+  36.67% { background-position: -400px -300px; }
+  38.33% { background-position: -500px -300px; }
+  40.00% { background-position: 0 -400px; }
+  41.67% { background-position: -100px -400px; }
+  43.33% { background-position: -200px -400px; }
+  45.00% { background-position: -300px -400px; }
+  46.67% { background-position: -400px -400px; }
+  48.33% { background-position: -500px -400px; }
+
+  /* 31~40 */
+  50.00% { background-position: 0 -500px; }
+  51.67% { background-position: -100px -500px; }
+  53.33% { background-position: -200px -500px; }
+  55.00% { background-position: -300px -500px; }
+  56.67% { background-position: -400px -500px; }
+  58.33% { background-position: -500px -500px; }
+  60.00% { background-position: 0 -600px; }
+  61.67% { background-position: -100px -600px; }
+  63.33% { background-position: -200px -600px; }
+  65.00% { background-position: -300px -600px; }
+
+  /* 41~50 */
+  66.67% { background-position: -400px -600px; }
+  68.33% { background-position: -500px -600px; }
+  70.00% { background-position: 0 -700px; }
+  71.67% { background-position: -100px -700px; }
+  73.33% { background-position: -200px -700px; }
+  75.00% { background-position: -300px -700px; }
+  76.67% { background-position: -400px -700px; }
+  78.33% { background-position: -500px -700px; }
+  80.00% { background-position: 0 -800px; }
+  81.67% { background-position: -100px -800px; }
+
+  /* 51~60 */
+  83.33% { background-position: -200px -800px; }
+  85.00% { background-position: -300px -800px; }
+  86.67% { background-position: -400px -800px; }
+  88.33% { background-position: -500px -800px; }
+  90.00% { background-position: 0 -900px; }
+  91.67% { background-position: -100px -900px; }
+  93.33% { background-position: -200px -900px; }
+  95.00% { background-position: -300px -900px; }
+  96.67% { background-position: -400px -900px; }
+  98.33% { background-position: -500px -900px; }
+}
+
+
+
+/************************************************************************************/
+/*
+  ========================================
+  공용 
+  ========================================
+*/
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+body {
+	font: 16px 'Ubuntu', sans-serif;
+	background: #ecf0f1;
+	border-top: 5px solid #95a5a6;
+}
+
+
+/*
+  ========================================
+  제목
+  ========================================
+*/
+header {
+	text-align: center;
+}
+header h1 {
+	font-size: 64px;
+	font-weight: 300;
+	margin: 80px 0 25px;
+	color: #3e3e3e;
+}
+header h1 span {
+	font-weight: 700;
+}
+header h2 {
+	color: #646464;
+}
+
+/*
+  ========================================
+  입력받기
+  ========================================
+*/
+.app-insert {
+	width: 800px;
+	margin: 50px auto 20px;
+}
+.app-insert input {
+	width: 100%;
+	height: 60px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #bdc3c7;
+	outline: none;
+	font: 300 28px 'Ubuntu', sans-serif;
+	padding: 20px;
+}
+
+/*
+  ========================================
+  Todo 항목
+  ========================================
+*/
+.app-list {
+	width: 800px;
+	margin: 0 auto;
+}
+.task {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 20px;
+	position: relative;
+	color: #333;
+
+	transition: all .2s ease;
+}
+.task:hover {
+	background: rgba(0, 0, 0, .04);
+	cursor: pointer;
+}
+.task:hover .remove-task {
+	opacity: 1;
+}
+.task-complete {
+	text-decoration: line-through;
+	color: #95a5a6;
+}
+.remove-task {
+	opacity: 0;
+	position: absolute;
+	right: 20px;
+	text-decoration: none;
+	color: #7f8c8d;
+
+	transition: all .2s ease;
+}
+.remove-task:hover {
+	color: #333;
+}
+
+
+
